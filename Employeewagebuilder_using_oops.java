@@ -1,4 +1,3 @@
- usecase7
 package usecases;
 
 public class Employeewagebuilder_using_oops {
@@ -9,7 +8,8 @@ public class Employeewagebuilder_using_oops {
 	public static final int NUM_OF_WORKING_DAYS = 2;
 	public static final int MAX_HRS_IN_MONTH = 10;
 	
-	public static int computeempwage() {
+	public static int computeempwage(String company,int EMP_RATE_PER_HOUR,int NUM_OF_WORKING_DAYS,int MAX_HRS_IN_MONTH) {
+		
 		// TODO Auto-generated method stub
 		
 		int empHrs=0;
@@ -40,9 +40,11 @@ public class Employeewagebuilder_using_oops {
 	    return totalEmpWage;
 	}
 	    public static void main (String[] args) {
-	    	computeempwage();
+	    	computeempwage("Dmart",20,8,5);
+	    	computeempwage("Reliance",10,5,8);
 	    }
+	
 }
+	   
 
-	    	
- main
+
