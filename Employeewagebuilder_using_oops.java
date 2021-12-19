@@ -1,59 +1,30 @@
- usecase3
+ usecase4
 package usecases;
 
 public class Employeewagebuilder_using_oops {
 
+	public static final int IS_PART_TIME =1;
+	public static final int IS_FULL_TIME = 2;
+	public static final int EMP_RATE_PER_HOUR = 20;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int IS_PART_TIME =1;
-		int IS_FULL_TIME = 2;
-		int EMP_RATE_PER_HOUR = 20;
+		
 		int empHrs=0;
 		int empWage=0;
-		double empcheck = Math.floor( Math.random() * 10 ) % 3;
-		if (empcheck == IS_PART_TIME)
-			empHrs = 4;
-		else if (empcheck == IS_FULL_TIME)
-			empHrs = 8;
-		else
-		{
-			empHrs=0;
-			empWage = empHrs * EMP_RATE_PER_HOUR;
-			System.out.println("Emp Wage:" + empWage);
-		}
-	}
-
-}
-package usecases;
-
-public class Employeewagebuilder_using_oops {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int IS_FULL_TIME = 1;
- usecase2
-		int EMP_RATE_PER_HOUR = 20;
-		int empHrs=0;
-		int empWage=0;
-		double empcheck = Math.floor( Math.random() * 10 ) % 2;
-		if (empcheck == IS_FULL_TIME)
-		{
+		int empcheck = (int) Math.floor( Math.random() * 10 ) % 3;
+		switch (empcheck) {
+		case IS_PART_TIME:
+			empHrs=4;
+			break;
+		case IS_FULL_TIME:
 			empHrs=8;
-		double empcheck = Math.floor( Math.random() * 10 ) % 2;
-		if (empcheck == IS_FULL_TIME)
-
-			System.out.println("employee is present");
+			break;
+			default:
+				empHrs=0;
 		}
-		else
-		{
-      usecase2
-			empHrs=0;
 			empWage = empHrs * EMP_RATE_PER_HOUR;
 			System.out.println("Emp Wage:" + empWage);
- main
-			System.out.println("employee is absent");
-		}
 	}
 
 }
- main
