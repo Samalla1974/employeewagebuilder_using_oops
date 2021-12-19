@@ -1,3 +1,4 @@
+Usecase5
 package usecases;
 
 public class Employeewagebuilder_using_oops {
@@ -33,3 +34,4 @@ public class Employeewagebuilder_using_oops {
 	    System.out.println("Total Empwage:" + totalEmpWage);
 }
 }
+ main
