@@ -36,7 +36,7 @@ public class Employeewagebuilder_using_oops {
 		totalEmpHrs += empHrs;
 		System.out.println("Day#:" + totalWorkingDays + "Emp Hr:" +empHrs);
 		totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
-	    System.out.println("Total Empwage:" + totalEmpWage);
+	    System.out.println("Total Empwage for company is:" + totalEmpWage );
 	    return totalEmpWage;
 	}
 	    public static void main (String[] args) {
